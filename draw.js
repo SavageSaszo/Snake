@@ -8,15 +8,24 @@ var start = 0;
 
 (function setup() {
   snake = new Snake();
+  fruit = new Fruit();
+  fruit.pickLocation();
 
   window.setInterval(() => {
     if (start) {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
+      fruit.draw();
       snake.update();
       snake.draw();
+
+      if (snake.eat(fruit)) {
+        fruit.pickLocation();
+      }
+
       snake.checkCollision();
+      document.querySelector(".current-score-value").innerText = snake.total;
     } else {
-      console.log("Press anything to start");
+      document.querySelector(".current-score-value").innerText = "Press anything to start";
     }
   }, 50);
 })();
