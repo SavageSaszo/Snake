@@ -56,16 +56,16 @@ Inside container
 hr {
   border: none;
   min-height: 5px;
-  background: #0e0e0e;
+  background: #0a4902;
   margin: 1rem 0;
 }
 
 .score-container {
   flex-basis: 30%;
   display: block;
-  background: #404d07;
+  background: #c2e915;
   padding: 15px;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .score-text {
