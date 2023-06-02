@@ -1,3 +1,7 @@
+// Konstruktor obiektu Fruit, który reprezentuje owoc na planszy.
+// Definiuje właściwości x i y, które przechowują pozycję owocu na planszy.
+// Metoda pickLocation() losowo wybiera pozycję owocu na planszy.
+// Metoda draw() rysuje owoc na planszy, ustawiając odpowiedni kolor i rozmiar.
 function Fruit() {
   this.x;
   this.y;
